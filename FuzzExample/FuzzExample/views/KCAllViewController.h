@@ -10,4 +10,6 @@
 
 @interface KCAllViewController : UITableViewController
 
+@property (nonatomic, strong) NSArray *items;
+
 @end

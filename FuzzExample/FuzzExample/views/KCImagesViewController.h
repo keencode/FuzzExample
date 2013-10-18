@@ -10,4 +10,6 @@
 
 @interface KCImagesViewController : UITableViewController
 
+@property (nonatomic, strong) NSArray *items;
+
 @end

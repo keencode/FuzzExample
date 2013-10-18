@@ -10,4 +10,6 @@
 
 @interface KCTextsViewController : UITableViewController
 
+@property (nonatomic, strong) NSArray *items;
+
 @end

@@ -10,8 +10,6 @@
 
 @interface KCItem : NSObject
 
-- (id)initWithDictionary:(NSDictionary *)dictionary;
-
 @property (nonatomic, strong) NSString *uid;
 @property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) NSString *data;

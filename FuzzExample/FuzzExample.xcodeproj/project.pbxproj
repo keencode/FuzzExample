@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9E0F617724854EB0842F88B1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46B5A492A4B43BE84B0F926 /* libPods.a */; };
+		B8352473180E4BFD00A0645F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8352472180E4BFD00A0645F /* MobileCoreServices.framework */; };
+		B8352475180E4C0500A0645F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8352474180E4C0500A0645F /* SystemConfiguration.framework */; };
+		B83524C1180F2D5800A0645F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B83524BE180F2D5800A0645F /* data.json */; };
+		B83524C2180F2D5800A0645F /* FixtureHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B83524C0180F2D5800A0645F /* FixtureHelper.m */; };
+		B83524C6180F38C900A0645F /* data_invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = B83524C5180F38C900A0645F /* data_invalid.json */; };
 		B85146C5180D02E200A79CCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85146C4180D02E200A79CCB /* Foundation.framework */; };
 		B85146C7180D02E200A79CCB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85146C6180D02E200A79CCB /* CoreGraphics.framework */; };
 		B85146C9180D02E200A79CCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85146C8180D02E200A79CCB /* UIKit.framework */; };
@@ -20,12 +25,18 @@
 		B85146E5180D02E200A79CCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85146C4180D02E200A79CCB /* Foundation.framework */; };
 		B85146E6180D02E200A79CCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85146C8180D02E200A79CCB /* UIKit.framework */; };
 		B85146EE180D02E200A79CCB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B85146EC180D02E200A79CCB /* InfoPlist.strings */; };
-		B85146F0180D02E200A79CCB /* FuzzExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B85146EF180D02E200A79CCB /* FuzzExampleTests.m */; };
+		B85146F0180D02E200A79CCB /* ItemSerializerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B85146EF180D02E200A79CCB /* ItemSerializerTests.m */; };
 		B874E498180E40FE0069B86F /* KCAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B874E497180E40FE0069B86F /* KCAllViewController.m */; };
 		B874E49B180E41130069B86F /* KCTextsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B874E49A180E41130069B86F /* KCTextsViewController.m */; };
 		B874E49E180E41390069B86F /* KCImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B874E49D180E41390069B86F /* KCImagesViewController.m */; };
 		B874E4A1180E42E80069B86F /* KCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B874E4A0180E42E80069B86F /* KCItem.m */; };
-		B874E4A4180E43CD0069B86F /* KCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B874E4A3180E43CD0069B86F /* KCModel.m */; };
+		B874E4A4180E43CD0069B86F /* KCDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B874E4A3180E43CD0069B86F /* KCDataStore.m */; };
+		B8FFDF701810B93700ABE789 /* KCItem+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FFDF6F1810B93700ABE789 /* KCItem+Network.m */; };
+		B8FFDF771810C9C600ABE789 /* KCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FFDF761810C9C600ABE789 /* KCDetailViewController.m */; };
+		B8FFDF791810CB1A00ABE789 /* DataStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FFDF781810CB1A00ABE789 /* DataStoreTests.m */; };
+		B8FFDF7C1810D3F700ABE789 /* KCItemResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FFDF7B1810D3F700ABE789 /* KCItemResponseSerializer.m */; };
+		B8FFDF7F1810D9CB00ABE789 /* KCImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FFDF7E1810D9CB00ABE789 /* KCImageTableViewCell.m */; };
+		B8FFDF821810DB1A00ABE789 /* KCAllTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FFDF811810DB1A00ABE789 /* KCAllTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +51,12 @@
 
 /* Begin PBXFileReference section */
 		47CEB28B6AED4083961B48DC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B8352472180E4BFD00A0645F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B8352474180E4C0500A0645F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B83524BE180F2D5800A0645F /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		B83524BF180F2D5800A0645F /* FixtureHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixtureHelper.h; sourceTree = "<group>"; };
+		B83524C0180F2D5800A0645F /* FixtureHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixtureHelper.m; sourceTree = "<group>"; };
+		B83524C5180F38C900A0645F /* data_invalid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data_invalid.json; sourceTree = "<group>"; };
 		B85146C1180D02E200A79CCB /* FuzzExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuzzExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85146C4180D02E200A79CCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B85146C6180D02E200A79CCB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,7 +73,7 @@
 		B85146E3180D02E200A79CCB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B85146EB180D02E200A79CCB /* FuzzExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FuzzExampleTests-Info.plist"; sourceTree = "<group>"; };
 		B85146ED180D02E200A79CCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B85146EF180D02E200A79CCB /* FuzzExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FuzzExampleTests.m; sourceTree = "<group>"; };
+		B85146EF180D02E200A79CCB /* ItemSerializerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemSerializerTests.m; sourceTree = "<group>"; };
 		B874E496180E40FE0069B86F /* KCAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCAllViewController.h; path = views/KCAllViewController.h; sourceTree = "<group>"; };
 		B874E497180E40FE0069B86F /* KCAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCAllViewController.m; path = views/KCAllViewController.m; sourceTree = "<group>"; };
 		B874E499180E41130069B86F /* KCTextsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCTextsViewController.h; path = views/KCTextsViewController.h; sourceTree = "<group>"; };
@@ -65,8 +82,19 @@
 		B874E49D180E41390069B86F /* KCImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCImagesViewController.m; path = views/KCImagesViewController.m; sourceTree = "<group>"; };
 		B874E49F180E42E80069B86F /* KCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCItem.h; path = model/KCItem.h; sourceTree = "<group>"; };
 		B874E4A0180E42E80069B86F /* KCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCItem.m; path = model/KCItem.m; sourceTree = "<group>"; };
-		B874E4A2180E43CD0069B86F /* KCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCModel.h; path = model/KCModel.h; sourceTree = "<group>"; };
-		B874E4A3180E43CD0069B86F /* KCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCModel.m; path = model/KCModel.m; sourceTree = "<group>"; };
+		B874E4A2180E43CD0069B86F /* KCDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCDataStore.h; path = model/KCDataStore.h; sourceTree = "<group>"; };
+		B874E4A3180E43CD0069B86F /* KCDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCDataStore.m; path = model/KCDataStore.m; sourceTree = "<group>"; };
+		B8FFDF6E1810B93700ABE789 /* KCItem+Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KCItem+Network.h"; path = "network/KCItem+Network.h"; sourceTree = "<group>"; };
+		B8FFDF6F1810B93700ABE789 /* KCItem+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "KCItem+Network.m"; path = "network/KCItem+Network.m"; sourceTree = "<group>"; };
+		B8FFDF751810C9C600ABE789 /* KCDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCDetailViewController.h; path = views/KCDetailViewController.h; sourceTree = "<group>"; };
+		B8FFDF761810C9C600ABE789 /* KCDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCDetailViewController.m; path = views/KCDetailViewController.m; sourceTree = "<group>"; };
+		B8FFDF781810CB1A00ABE789 /* DataStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStoreTests.m; sourceTree = "<group>"; };
+		B8FFDF7A1810D3F700ABE789 /* KCItemResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCItemResponseSerializer.h; path = network/KCItemResponseSerializer.h; sourceTree = "<group>"; };
+		B8FFDF7B1810D3F700ABE789 /* KCItemResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCItemResponseSerializer.m; path = network/KCItemResponseSerializer.m; sourceTree = "<group>"; };
+		B8FFDF7D1810D9CB00ABE789 /* KCImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCImageTableViewCell.h; path = views/KCImageTableViewCell.h; sourceTree = "<group>"; };
+		B8FFDF7E1810D9CB00ABE789 /* KCImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCImageTableViewCell.m; path = views/KCImageTableViewCell.m; sourceTree = "<group>"; };
+		B8FFDF801810DB1A00ABE789 /* KCAllTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KCAllTableViewCell.h; path = views/KCAllTableViewCell.h; sourceTree = "<group>"; };
+		B8FFDF811810DB1A00ABE789 /* KCAllTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KCAllTableViewCell.m; path = views/KCAllTableViewCell.m; sourceTree = "<group>"; };
 		E46B5A492A4B43BE84B0F926 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8352475180E4C0500A0645F /* SystemConfiguration.framework in Frameworks */,
+				B8352473180E4BFD00A0645F /* MobileCoreServices.framework in Frameworks */,
 				B85146C7180D02E200A79CCB /* CoreGraphics.framework in Frameworks */,
 				B85146C9180D02E200A79CCB /* UIKit.framework in Frameworks */,
 				B85146C5180D02E200A79CCB /* Foundation.framework in Frameworks */,
@@ -95,6 +125,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8352470180E4AB500A0645F /* network */ = {
+			isa = PBXGroup;
+			children = (
+				B8FFDF6E1810B93700ABE789 /* KCItem+Network.h */,
+				B8FFDF6F1810B93700ABE789 /* KCItem+Network.m */,
+				B8FFDF7A1810D3F700ABE789 /* KCItemResponseSerializer.h */,
+				B8FFDF7B1810D3F700ABE789 /* KCItemResponseSerializer.m */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		B8352471180E4AF200A0645F /* system */ = {
+			isa = PBXGroup;
+			children = (
+				B874E4A2180E43CD0069B86F /* KCDataStore.h */,
+				B874E4A3180E43CD0069B86F /* KCDataStore.m */,
+			);
+			name = system;
+			sourceTree = "<group>";
+		};
+		B83524BD180F2D5800A0645F /* fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				B83524BF180F2D5800A0645F /* FixtureHelper.h */,
+				B83524C0180F2D5800A0645F /* FixtureHelper.m */,
+				B83524BE180F2D5800A0645F /* data.json */,
+				B83524C5180F38C900A0645F /* data_invalid.json */,
+			);
+			path = fixtures;
+			sourceTree = "<group>";
+		};
 		B85146B8180D02E200A79CCB = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +179,8 @@
 		B85146C3180D02E200A79CCB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B8352474180E4C0500A0645F /* SystemConfiguration.framework */,
+				B8352472180E4BFD00A0645F /* MobileCoreServices.framework */,
 				B85146C4180D02E200A79CCB /* Foundation.framework */,
 				B85146C6180D02E200A79CCB /* CoreGraphics.framework */,
 				B85146C8180D02E200A79CCB /* UIKit.framework */,
@@ -132,6 +195,8 @@
 			children = (
 				B85146D3180D02E200A79CCB /* AppDelegate.h */,
 				B85146D4180D02E200A79CCB /* AppDelegate.m */,
+				B8352471180E4AF200A0645F /* system */,
+				B8352470180E4AB500A0645F /* network */,
 				B874E494180E40A70069B86F /* model */,
 				B874E495180E40B30069B86F /* views */,
 				B85146DC180D02E200A79CCB /* Images.xcassets */,
@@ -154,7 +219,9 @@
 		B85146E9180D02E200A79CCB /* FuzzExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				B85146EF180D02E200A79CCB /* FuzzExampleTests.m */,
+				B85146EF180D02E200A79CCB /* ItemSerializerTests.m */,
+				B8FFDF781810CB1A00ABE789 /* DataStoreTests.m */,
+				B83524BD180F2D5800A0645F /* fixtures */,
 				B85146EA180D02E200A79CCB /* Supporting Files */,
 			);
 			path = FuzzExampleTests;
@@ -172,8 +239,6 @@
 		B874E494180E40A70069B86F /* model */ = {
 			isa = PBXGroup;
 			children = (
-				B874E4A2180E43CD0069B86F /* KCModel.h */,
-				B874E4A3180E43CD0069B86F /* KCModel.m */,
 				B874E49F180E42E80069B86F /* KCItem.h */,
 				B874E4A0180E42E80069B86F /* KCItem.m */,
 			);
@@ -184,14 +249,52 @@
 			isa = PBXGroup;
 			children = (
 				B85146D6180D02E200A79CCB /* Main.storyboard */,
-				B874E496180E40FE0069B86F /* KCAllViewController.h */,
-				B874E497180E40FE0069B86F /* KCAllViewController.m */,
-				B874E499180E41130069B86F /* KCTextsViewController.h */,
-				B874E49A180E41130069B86F /* KCTextsViewController.m */,
-				B874E49C180E41390069B86F /* KCImagesViewController.h */,
-				B874E49D180E41390069B86F /* KCImagesViewController.m */,
+				B8FFDF711810B94E00ABE789 /* all */,
+				B8FFDF721810B95600ABE789 /* texts */,
+				B8FFDF731810B96600ABE789 /* images */,
+				B8FFDF741810C99E00ABE789 /* detail */,
 			);
 			name = views;
+			sourceTree = "<group>";
+		};
+		B8FFDF711810B94E00ABE789 /* all */ = {
+			isa = PBXGroup;
+			children = (
+				B874E496180E40FE0069B86F /* KCAllViewController.h */,
+				B874E497180E40FE0069B86F /* KCAllViewController.m */,
+				B8FFDF801810DB1A00ABE789 /* KCAllTableViewCell.h */,
+				B8FFDF811810DB1A00ABE789 /* KCAllTableViewCell.m */,
+			);
+			name = all;
+			sourceTree = "<group>";
+		};
+		B8FFDF721810B95600ABE789 /* texts */ = {
+			isa = PBXGroup;
+			children = (
+				B874E499180E41130069B86F /* KCTextsViewController.h */,
+				B874E49A180E41130069B86F /* KCTextsViewController.m */,
+			);
+			name = texts;
+			sourceTree = "<group>";
+		};
+		B8FFDF731810B96600ABE789 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B874E49C180E41390069B86F /* KCImagesViewController.h */,
+				B874E49D180E41390069B86F /* KCImagesViewController.m */,
+				B8FFDF7D1810D9CB00ABE789 /* KCImageTableViewCell.h */,
+				B8FFDF7E1810D9CB00ABE789 /* KCImageTableViewCell.m */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		B8FFDF741810C99E00ABE789 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				B8FFDF751810C9C600ABE789 /* KCDetailViewController.h */,
+				B8FFDF761810C9C600ABE789 /* KCDetailViewController.m */,
+			);
+			name = detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +386,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B85146EE180D02E200A79CCB /* InfoPlist.strings in Resources */,
+				B83524C6180F38C900A0645F /* data_invalid.json in Resources */,
+				B83524C1180F2D5800A0645F /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,8 +436,13 @@
 				B874E498180E40FE0069B86F /* KCAllViewController.m in Sources */,
 				B85146D1180D02E200A79CCB /* main.m in Sources */,
 				B874E49B180E41130069B86F /* KCTextsViewController.m in Sources */,
-				B874E4A4180E43CD0069B86F /* KCModel.m in Sources */,
+				B8FFDF821810DB1A00ABE789 /* KCAllTableViewCell.m in Sources */,
+				B8FFDF7C1810D3F700ABE789 /* KCItemResponseSerializer.m in Sources */,
+				B8FFDF701810B93700ABE789 /* KCItem+Network.m in Sources */,
+				B874E4A4180E43CD0069B86F /* KCDataStore.m in Sources */,
 				B874E49E180E41390069B86F /* KCImagesViewController.m in Sources */,
+				B8FFDF771810C9C600ABE789 /* KCDetailViewController.m in Sources */,
+				B8FFDF7F1810D9CB00ABE789 /* KCImageTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +450,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B85146F0180D02E200A79CCB /* FuzzExampleTests.m in Sources */,
+				B8FFDF791810CB1A00ABE789 /* DataStoreTests.m in Sources */,
+				B85146F0180D02E200A79CCB /* ItemSerializerTests.m in Sources */,
+				B83524C2180F2D5800A0645F /* FixtureHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +596,7 @@
 		};
 		B85146F7180D02E200A79CCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47CEB28B6AED4083961B48DC /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FuzzExample.app/FuzzExample";

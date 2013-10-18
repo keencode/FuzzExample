@@ -1,5 +1,5 @@
 //
-//  KCModel.h
+//  KCDataStore.h
 //  FuzzExample
 //
 //  Created by Yee Peng Chia on 10/15/13.
@@ -8,14 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface KCModel : NSObject
+@interface KCDataStore : NSObject
 
 @property (nonatomic, strong) NSArray *allItems;
 
-+ (KCModel *)sharedModel;
-
-- (void)loadDataOnSuccess:(void (^)(NSArray *items))successBlock
-                onFailure:(void (^)(NSError *error))failureBlock;
++ (KCDataStore *)sharedInstance;
 
 - (NSArray *)textItems;
 - (NSArray *)imageItems;

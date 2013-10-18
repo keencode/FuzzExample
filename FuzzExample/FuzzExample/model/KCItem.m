@@ -10,16 +10,4 @@
 
 @implementation KCItem
 
-- (id)initWithDictionary:(NSDictionary *)dictionary
-{
-    self = [super init];
-    if (self) {
-        self.uid = [dictionary objectForKey:@"id"];
-        self.type = [dictionary objectForKey:@"type"];
-        self.data = [dictionary objectForKey:@"data"];
-    }
-    
-    return self;
-}
-
 @end
